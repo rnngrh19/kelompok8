@@ -1,0 +1,49 @@
+/*content*/
+:root {
+    --bg: #19273a;
+    --primary: #497bbf;
+}
+.content {
+    margin-top: 1rem;
+    background-color: #fff;
+    padding: 1rem 0 0 2rem;
+    width: 99%;
+    border-radius: 10px;
+    height: 12rem;
+    color: #000;
+    margin-left: 1rem;
+
+}
+
+.content .content-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.content .content-row .row-card {
+    margin-right: 1rem;
+}
+
+.content .content-row button {
+    height: 2rem;
+    width: 8rem;
+    border: none;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+}
+.content .content-row .row-card p{
+    margin: 0 0 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.content .content-row .row-card .form-input{
+    width: 15rem;
+    padding: 0 0 0 0.5rem;
+    height: 2rem;
+    color: #000;
+    
+}
+

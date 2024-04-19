@@ -1,0 +1,45 @@
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+   display: flex;
+}
+
+.sidebar {
+    width: 23%;
+    height: 100%;
+    padding: 1rem 0 1rem 0;
+    position: fixed;
+}
+
+
+.sidebar .profil {
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.sidebar .items {
+    padding: 1rem 0 0 0 ;
+}
+.sidebar .nav-item {
+    padding: 0 0 0 2rem;
+    transition: 0.5s;
+    
+}
+.sidebar .nav-item:hover {
+    background-color: var(--primary);
+    border-radius: 1rem;
+}
+
+.main {
+    margin-left: 23%;
+}
