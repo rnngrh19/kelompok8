@@ -71,8 +71,14 @@
                 <div class="content-title">
                     <h4>JADWAL</h4>
                 </div>
-                <div class="tombol">
-                    <button>TAMBAH JADWAL</button>
+                <div class="content-tombol">
+                   <div class="tombol">
+                      <button onclick="openForm()">TAMBAH JADWAL</button>
+                   </div>
+                   <div class="search">
+                      <i data-feather="search"></i>
+                      <input type="text" placeholder="search">
+                   </div>
                 </div>
                 <div class="card-body">
                       <div class="table-responsive">
@@ -222,9 +228,76 @@
 
             </div>
         </div>
+    <div id="myForm" class="section-form">
+      <div class="content-form">
+        <div class="form-title">
+           <h4>Tambah Jadwal Pelajar</h4>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeForm()">&times;</a>
+        </div>
+      <div class="form-input">
+        <form action="">
+          <div class="input1">
+            <div class="row1">
+                <p>Hari</p>
+                <select name="" id="">
+                    <option value="pilih hari">pilih hari</option>
+                    <option value="senen">senen</option>
+                    <option value="selasa">selasa</option>
+                </select>
+           </div>
+           <div class="row2">
+                <p>Kelas</p>
+                <select name="" id="">
+                     <option value="pilih kelas">pilih kelas</option>
+                     <option value="VII">VII</option>
+                     <option value="IX">IX</option>
+                </select>  
+           </div>
+         </div>
+
+            <p>Mata Pelajaran</p>
+            <select name="" id="">
+                <option value="pilih Mata Pelajaran">pilih Mata Pelajaran</option>
+                <option value="Matematika">Matematika</option>
+                <option value="IPA">IPA</option>
+            </select>
+            <p>Guru</p>
+            <select name="" id="">
+                <option value="pilih Guru">pilih Guru</option>
+                <option value="Yanto s.pd">Yanto s.pd</option>
+                <option value="yeyen m.pd">m.pd</option>
+            </select>
+
+            <p>Jam Mulai</p>
+            <select name="" id="">
+                <option value="pilih hari">pilih Jam Mulai</option>
+                <option value="09.00">09.00</option>
+                <option value="10.00">10.00</option>
+            </select>
+
+            <p>Jam Selesai</p>
+            <select name="" id="">
+                <option value="pilih hari">pilih Jam Selesai</option>
+                <option value="11.00">11.00</option>
+                <option value="12.00">12.00</option>
+            </select>
+        </form>
+      </div>
+
+      <div class="form-button">
+        <button>Submit</button>
+      </div>
+  </div>
     </div>
     <script>
         feather.replace();
-      </script>
+        function openForm() {
+           document.getElementById("myForm").style.width = "100%";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.width = "0%";
+        }
+    </script>
 </body>
 </html>
